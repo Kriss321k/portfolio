@@ -1,0 +1,78 @@
+.App-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+    .App-banner {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background: -moz-linear-gradient(to bottom,black,gray);
+        align-items: center;
+        z-index: 2;
+    }
+        .banner-txt {
+            display: flex;
+            font-family: cursive;
+            font-size: 35px;
+            font-weight: bolder;
+            font-style: italic;
+            background: -webkit-linear-gradient(red, yellow,red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 1px;
+            width: 25%;
+            margin-left: 15px;
+            align-items: center;
+            text-decoration: underline 2px orange;
+        }
+                .banner-txt-icon {
+                    margin-right: 15px;
+                    color: rgb(248, 162, 58);
+                }
+        .banner-btndiv{
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            justify-content: flex-end;
+        }
+            .banner-btn {
+                display: flex;
+                padding: 5px;
+                color: rgb(248, 162, 58);
+                margin: 10px;
+                width: 200px;
+                font-family: cursive;
+                font-size: 25px;
+                font-weight: bolder;
+                font-style: oblique;
+                text-decoration: none;
+                align-items: center;
+                justify-content: center;
+            }.banner-btn:hover{color: lightblue;}
+
+
+    .App-div {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .App-footer {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        bottom: 0;
+        left: 0;
+        background: -moz-linear-gradient(to top,black,gray);
+        justify-content: flex-end;
+        padding: 5px;
+    }

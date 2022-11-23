@@ -1,0 +1,97 @@
+.AboutMeDiv {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 50px;
+
+    animation : fade 1s ease;
+} @keyframes fade {
+        0%{ opacity: 0%; }
+        100%{ opacity: 100%; }
+    }
+
+    .AboutMeDiv-head {
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: center;
+    }
+        .AboutMeDiv-headtxt { 
+            font-size: 55px;
+            width: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: rgb(239, 186, 53);
+        }
+
+    .AboutMeDiv-body {
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        margin-top: 15px;
+        margin-right: 50px;
+        margin-left: 80px;
+    }
+
+        .AboutMeDiv-imgDiv {
+            display: flex;
+            width: 450px;
+            height: 450px;
+            background-color: aquamarine;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 40px 5px 20px rgb(213, 209, 209);
+            border: 5px solid green;
+            cursor: pointer;
+        }
+            .AboutMeDiv-img {
+                display: flex;
+                width: 450px;
+                height: 450px;
+                border-radius: 50%;
+            }
+            .AboutMeDiv-PopupAppear {
+                display: flex;
+                position: absolute;
+                margin-top: -120px;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+             
+                animation: FadeIn-Out 4s forwards;
+            } @keyframes FadeIn-Out {
+                0%{width: 50px; height: 50px; opacity: 0;}
+                80%{width: 250px; height:250px; opacity: 1;}
+                100%{opacity: 0;}
+            }
+            .AboutMeDiv-PopupHidden {
+                display: none;
+            }
+
+        .AboutMeDiv-section {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-left: 80px;
+        }
+            .AboutMeDiv-detail {
+                display: flex;
+                flex-direction: row;
+                border: 3px groove black;
+                box-shadow: 15px 8px 20px rgb(148, 143, 143);
+                border-radius: 20px;
+                height: 20%;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                align-items: center;
+                padding-left: 20px;
+                font-size: 25px;
+                font-family: cursive;
+            }
+
+    

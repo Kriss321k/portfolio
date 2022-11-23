@@ -1,0 +1,150 @@
+.WorkExpDiv {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: cursive;
+
+    animation : fade 1s ease;
+} @keyframes fade {
+        0%{ opacity: 0%; }
+        100%{ opacity: 100%; }
+    }
+
+    .WorkExpDiv-head {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        justify-content: center;
+        cursor: url("./Img/bag.png"), auto
+    }
+        .WorkExpDiv-headtxt { 
+            font-size: 50px;
+            width: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: rgb(239, 186, 53);
+        }
+
+    .WorkExpDiv-scroll-btn {
+        display: flex;
+        font-family: cursive;
+        font-size: 17px;
+        width: 80px;
+        aspect-ratio: 1;
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin-right: 20px;
+        margin-top: 120px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        word-wrap: break-word;
+        background: -moz-radial-gradient(antiquewhite,white);
+        cursor: pointer;
+        opacity: 60%;
+    }.WorkExpDiv-scroll-btn:hover { opacity: 1; }
+
+        .WorkExpDiv-scroll-listHidden {
+            display: none;
+        }
+        .WorkExpDiv-scroll-listAppear {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 0;
+            top: 0;
+            margin-right: 25px;
+            margin-top: 205px;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            cursor: pointer;
+            opacity: 60%;
+            
+            animation: Sliding-Show 2s forwards;
+        } @keyframes Sliding-Show {
+            0%{opacity: 0;}
+            100%{opacity: normal;}
+        }
+        .WorkExpDiv-scroll-listAppear:hover { opacity: 1; }
+
+            .WorkExpDiv-scroll-listAppear p {
+                display: flex;
+                height: fit-content;
+                width: 250px;
+                background-color: antiquewhite;
+                font-family: cursive;
+                font-size: 20px;
+                border-bottom: 2px dashed black;
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                padding: 15px;
+                margin-top: -20px;
+                justify-content: center;
+            }
+                .WorkExpDiv-scroll-listAppear p:nth-child(1) {
+                    border-top: 2px solid black;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+                .WorkExpDiv-scroll-listAppear p:nth-child(6) {
+                    border-bottom: 2px solid black;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                }
+
+    .WorkExpDiv-Children {
+        display: flex;
+        width: 80%;
+        height: fit-content;
+        background: -moz-radial-gradient(antiquewhite,rgb(235, 197, 128));
+        border: 2px solid black;
+        border-radius: 50px;
+        margin-bottom: 50px;
+        padding: 30px;
+        cursor: url("./Img/gear.png"), auto;
+        box-shadow: 10px 10px 10px gray;
+    }    
+
+        .WorkExpDiv-Children-head {
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            font-size: 30px;
+            padding: 20px;
+            border: 2px solid black;
+            position: absolute;
+            margin-top: -50px;
+            margin-left: -50px;
+            background: -moz-radial-gradient(rgb(235, 197, 128),antiquewhite);
+            border-radius: 30px;
+            box-shadow: 10px 10px 10px gray;
+        }
+    
+        .WorkExpDiv-Children-detail {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            height: 100%;
+            font-size: 30px;
+            justify-content: center;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+            .WorkExpDiv-Children-subdetail {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                height: 100%;
+                font-size: 25px;
+                justify-content: center;
+                margin-top: 0;
+                margin-left: 60px;
+            }
+    

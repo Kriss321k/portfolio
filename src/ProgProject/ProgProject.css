@@ -1,0 +1,146 @@
+.ProgDiv {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    padding-top: 20px;
+
+    animation : fade 1s ease;
+} @keyframes fade {
+        0%{ opacity: 0%; }
+        100%{ opacity: 100%; }
+    }
+
+    .ProgDiv-head {
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: center;
+        cursor: url("./Img/TapeRuler.png"), auto ;
+    }
+        .ProgDiv-headtxt { 
+            font-size: 60px;
+            width: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: rgb(239, 186, 53);
+        }
+    
+    .ProgDiv-scroll-btn {
+        display: flex;
+        font-family: cursive;
+        font-size: 17px;
+        width: 80px;
+        aspect-ratio: 1;
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin-right: 20px;
+        margin-top: 120px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        word-wrap: break-word;
+        background: -moz-radial-gradient(antiquewhite,white);
+        cursor: pointer;
+        opacity: 60%;
+    }.ProgDiv-scroll-btn:hover { opacity: 1; }
+
+        .ProgDiv-scroll-listHidden {
+            display: none;
+        }
+        .ProgDiv-scroll-listAppear {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 0;
+            top: 0;
+            margin-right: 25px;
+            margin-top: 205px;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            cursor: pointer;
+            opacity: 60%;
+            
+            animation: Sliding-Show 2s forwards;
+        } @keyframes Sliding-Show {
+            0%{opacity: 0;}
+            100%{opacity: normal;}
+        }
+        .ProgDiv-scroll-listAppear:hover { opacity: 1; }
+
+            .ProgDiv-scroll-listAppear p {
+                display: flex;
+                height: fit-content;
+                width: 200px;
+                background-color: antiquewhite;
+                font-family: cursive;
+                font-size: 20px;
+                border-bottom: 2px dashed black;
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                padding: 15px;
+                margin-top: -20px;
+                justify-content: center;
+            }
+                .ProgDiv-scroll-listAppear p:nth-child(1) {
+                    border-top: 2px solid black;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+                .ProgDiv-scroll-listAppear p:nth-child(6) {
+                    border-bottom: 2px solid black;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                }
+            
+
+    .ProgDiv-body {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        cursor: url("./Img/YellowStart.png"), auto;
+    }
+        .ProgDiv-body-row {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            border: 2px solid black;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-family: cursive;
+            border-radius: 100px;
+            box-shadow: 30px 15px 15px gray;
+        }
+            .ProgDiv-body-row h2 {
+                font-size: 40px;
+            }
+            .ProgDiv-body-row h4 {
+                font-size: 30px;
+                text-decoration: underline;
+            }
+            .ProgDiv-body-row p {
+                font-size: 25px;
+            }
+                .ProgDiv-prev {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }   
+                    .ProgDiv-img {
+                        display: flex;
+                        width: 600px;
+                        height: 400px;
+                        margin: 10px;
+                    }
+                    .ProgDiv-prev a{
+                        font-size: 25px;
+                        margin: 25px;
+                        margin-left: 50px;
+                    }

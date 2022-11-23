@@ -1,0 +1,116 @@
+.SkillDiv {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+
+    animation : fade 1s ease;
+} @keyframes fade {
+        0%{ opacity: 0%; }
+        100%{ opacity: 100%; }
+    }
+
+    .SkillDiv-head {
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: center;
+    }
+        .SkillDiv-headtxt { 
+            font-size: 60px;
+            width: 35px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: rgb(239, 186, 53);
+            cursor: url("./Img/RunningMan.png"), auto;
+        }
+
+    .SkillDiv-body {
+        display: flex;
+        flex-direction: column;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 50px;
+        font-family: cursive;
+        height: fit-content;
+        padding-top: 10px;
+    }
+        .SkillDiv-row-shrink {
+            display: flex;
+            flex-direction: row;
+            border: 3px solid black;
+            border-radius: 50px;
+            font-size: 35px;
+            height: fit-content;
+            padding: 25px;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: url("./Img/expand.png"), auto;
+            box-shadow: 10px 10px 10px gray;
+
+
+            animation : shorter 1s forwards;
+        } @keyframes shorter {
+                0%{height: 350px; font-size: 30px;}
+                100%{height: 60px; font-size: 40px;}
+            }
+        .SkillDiv-row-expand {
+            display: flex;
+            border: 3px solid black;
+            border-radius: 50px;
+            height: 600px;
+            padding: 25px;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: url("./Img/compress.png"), auto;
+            box-shadow: 10px 10px 10px gray;
+
+            animation: longer 1s forwards;
+        } @keyframes longer {
+            0%{height: 60px; font-size: 40px;}
+            100%{height: 600px; font-size: 30px;}
+            }
+
+            .HiddenText {
+                display: none;
+                cursor: url("./Img/LRuler.png"), auto;
+            }
+            .AppearText {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 60%;
+                justify-content: center;
+                margin-left: 150px;
+                margin-top: -25px;
+                text-decoration: none;
+                z-index: 0;
+                cursor: url("./Img/LRuler.png"), auto;
+
+                animation: Fade 1s forwards;
+            } @keyframes Fade {
+                    0%{opacity: 0;}
+                    100%{opacity: 100%;}
+                }
+                .AppearText-detail {
+                    display: flex;
+                    margin-top: 40px;
+                    margin-bottom: -23px;
+                    height: 10%;
+                    font-size: 25px;
+                    align-items: center;
+                }
+                .AppearText-graph {
+                    display: flex;
+                    background-color: rgb(228, 244, 244);
+                    margin-top: 40px;
+                    height: 800px;
+                    justify-content: center;
+                    border-radius: 50px;
+                    padding: 340px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    cursor: pointer;
+                }
