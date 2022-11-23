@@ -1,3 +1,4 @@
+/*eslint-disable */
 import { faC, faE, faI, faK, faN, faO, faP, faR, faW, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./WorkExp.css"
