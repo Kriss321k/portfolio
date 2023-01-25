@@ -94,7 +94,7 @@ const Skill = ()=>{
                 </div>
 
                 <div onClick={ExpendDiv} className="SkillDiv-row-shrink">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Skill
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill Map
                     <p className="HiddenText">
                         <p className="AppearText-detail">
                             <img src="./SkillMap.png" alt="Loading" className="SkillImg"></img>
