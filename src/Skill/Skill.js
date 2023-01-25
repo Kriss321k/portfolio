@@ -75,21 +75,29 @@ const Skill = ()=>{
                 <div onClick={ExpendDiv} className="SkillDiv-row-shrink">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Skill
                     <p className="HiddenText">
-                    <p className="AppearText-detail" style={{textDecoration:"underline"}}><b>Capability</b></p>
-                        <p className="AppearText-detail" style={{marginLeft:"20px",fontSize:"21px"}}>
-                            &nbsp;- Planning, &nbsp;Management, &nbsp;Initiative, &nbsp;Analytical thinking
-                        </p>
                         <p className="AppearText-detail" style={{textDecoration:"underline"}}><b>Free-time Hobby</b></p>
                         <p className="AppearText-detail" style={{marginLeft:"20px",fontSize:"21px"}}>
                             {"1.) Internet"} &nbsp;{"2.) Badminton"} &nbsp;{"3.) Chess"} &nbsp;{"4.) LEGO"}
                         </p>
                         <p className="AppearText-detail" style={{textDecoration:"underline"}}><b>Strength</b></p>
                         <p className="AppearText-detail" style={{marginLeft:"20px",fontSize:"21px"}}>
+                            &nbsp;- Highly analytical, &nbsp;Planning/Managing, &nbsp;Initiative
+                        </p>
+                        <p className="AppearText-detail" style={{marginLeft:"20px",fontSize:"21px"}}>
                             &nbsp;- Punctual, &nbsp;Responsible, &nbsp;Self-Developing
                         </p>
                         <p className="AppearText-detail" style={{textDecoration:"underline"}}><b>Weakness</b></p>
                         <p className="AppearText-detail" style={{marginLeft:"20px",fontSize:"21px"}}>
                             &nbsp;{"- Indecisive sometimes (Required working to get used to)"}
+                        </p>
+                    </p>
+                </div>
+
+                <div onClick={ExpendDiv} className="SkillDiv-row-shrink">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Skill
+                    <p className="HiddenText">
+                        <p className="AppearText-detail">
+                            <img src="./SkillMap.png" alt="Loading" className="SkillImg"></img>
                         </p>
                     </p>
                 </div>

@@ -84,7 +84,7 @@
                 width: 60%;
                 justify-content: center;
                 margin-left: 150px;
-                margin-top: -25px;
+                margin-top: -20px;
                 text-decoration: none;
                 z-index: 0;
                 cursor: url("./Img/LRuler.png"), auto;
@@ -114,3 +114,10 @@
                     padding-bottom: 0;
                     cursor: pointer;
                 }
+
+.SkillImg{
+    display: flex;
+    width: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+}
